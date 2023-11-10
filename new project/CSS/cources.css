@@ -1,124 +1,165 @@
-/*DEFAULT*/
-.title{
-    font-size:1em;
-    display:block;
-    }
-    
-    .Cards{
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    }
-    
-    .product_card{
-    width:250px;
-    height:360px;
-    position:relative;
-    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
-    display:inline-block;
-    margin:10px;
-    }
-    
-    .product_card img{
-    width:100%;
-    height:60%;
-    }
-    
-    .product_card ul{
-    width:10%;
-    position:absolute;
-    top:10px;
-    left:-20px;
-    z-index:1;
-    }
-    
-    .product_card .views{
-    position:absolute;
-    top:0;
-    right:0;
-    color:#fff;
-    padding:5px 20px;
-    background:#FF324D;
-    font-size:10px;
-    }
-    
-    .product_card section{
-    padding:10px;
-    }
-    
-    .product_card section .price{
-    color:#FF324D;
-    padding:0 10px;
-    margin-right:10px;
-    }
-    
-    .product_card section strike{
-    color:gray;
-    padding:0 5px;
-    }
-    
-    .product_card section .discount{
-    color:green;
-    padding:0 5px;
-    }
-    
-    .product_card section .fa-star{
-    color:gray;
-    }
-    
-    .product_card section .checked {
-    color: orange;
-    }
-    
-    .product_card section .rating{
-    color:rgba(1,1,1,0.5);
-    }
-    
-    .product_icons{
-    display:none;
-    }
-    
-    .product_card ul li{
-    list-style:none;
-    padding:10px 5px;
-    padding-left:0;
-    color:#FF324D;
-    }
-    
-    .product_card ul li i{
-    background:#fff;
-    border-radius:50%;
-    padding:10px;
-    height:15px;
-    width:15px;
-    text-align:center;
-    transition:0.5s;
-    }
-    
-    .product_card ul li i:hover{
-    background:#FF324D;
-    color:#fff;
-    }
-    
-    
-    .product_card:hover  > .product_icons{
-    display:block;
-    }
-    
-    
-    /* ANIMATION */
-    .animate {
-      -webkit-animation: animatezoom 0.6s;
-      animation: animatezoom 0.6s
-    }
-    
-    @-webkit-keyframes animatezoom {
-      from {-webkit-transform: scale(0)} 
-      to {-webkit-transform: scale(1)}
-    }
-      
-    @keyframes animatezoom {
-      from {transform: scale(0)} 
-      to {transform: scale(1)}
-    }
+/* Included color classes.. 
+	.red 
+	.blue 
+	.orange
+*/
+/* Icon set - http://ionicons.com/ */
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1191 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 310px;
+  width: 100%;
+  background: #000000;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1191 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+figure.snip1191 img {
+  width: 100%;
+  vertical-align: top;
+  height: 250px;
+}
+
+figure.snip1191 figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+figure.snip1191 h3 {
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  padding: 0px 25px;
+  line-height: 44px;
+  margin: 0;
+  left: 0;
+  font-weight: 400;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px !important;
+}
+
+figure.snip1191 h3:before {
+  position: absolute;
+  left: 100%;
+  border-style: solid;
+  border-width: 44px 12px 0 0;
+  border-color: #000000 transparent transparent;
+  content: '';
+  top: 0;
+}
+
+figure.snip1191 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 10px;
+  margin-right: -1px;
+  line-height: 40px;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-transform: translateX(120%);
+  transform: translateX(120%);
+}
+
+figure.snip1191 span:before {
+  position: absolute;
+  right: 100%;
+  border-style: solid;
+  border-width: 0 0 40px 12px;
+  border-color: transparent transparent #000000;
+  content: '';
+  top: 0;
+}
+
+figure.snip1191 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+figure.snip1191.blue {
+  background-color: #2472a4;
+}
+
+figure.snip1191.blue h3,
+figure.snip1191.blue span {
+  background-color: #2472a4;
+}
+
+figure.snip1191.blue span:before {
+  border-color: transparent transparent #2472a4;
+}
+
+figure.snip1191.blue h3:before {
+  border-color: #2472a4 transparent transparent;
+}
+
+figure.snip1191.red {
+  background-color: #ab3326;
+}
+
+figure.snip1191.red h3,
+figure.snip1191.red span {
+  background-color: #ab3326;
+}
+
+figure.snip1191.red span:before {
+  border-color: transparent transparent #ab3326;
+}
+
+figure.snip1191.red h3:before {
+  border-color: #ab3326 transparent transparent;
+}
+
+figure.snip1191.orange {
+  background-color: rgb(224, 8, 98);
+}
+
+figure.snip1191.orange h3,
+figure.snip1191.orange span {
+  background-color: rgb(224, 8, 98);
+}
+
+figure.snip1191.orange span:before {
+  border-color: transparent transparent rgb(224, 8, 98);
+}
+
+figure.snip1191.orange h3:before {
+  border-color: rgb(224, 8, 98) transparent transparent;
+}
+
+figure.snip1191:hover img,
+figure.snip1191.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip1191:hover span,
+figure.snip1191.hover span {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
