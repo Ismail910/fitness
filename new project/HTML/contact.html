@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Registration</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-wrapper">
+                <div class="logo-container">
+                    <img class="logo" src="../images/logo.jpg" alt="Logo">
+                </div>
+                <nav>
+                    <input class="hidden" type="checkbox" id="menuToggle">
+                    <label class="menu-btn" for="menuToggle">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                    </label>
+                    <div class="nav-container">
+                        <ul class="nav-tabs">
+                            <li class="nav-tab"><a href="./index.html">Home</a></li>
+                            <li class="nav-tab"><a href="./course.html">Course</a></li>
+                            <li class="nav-tab"><a href="./contact.html">Contact</a></li>
+                            <li class="nav-tab"><a href="./about.html">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <form class="contact" action="your_server_endpoint" method="POST">
+            <h2>Registration Form</h2>
+            <p>Please fill out the form below to register:</p>
+
+            <div class="form-group">
+                <label for="uname">First Name</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="psw">Last Name</label>
+                <input type="text" id="password" placeholder="Enter Last Name" name="psw" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="ge" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="mobile">Mobile phone</label>
+                <input type="text" id="mobile" placeholder="Enter Mobile Phone" name="psw" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" placeholder="Enter Date of Birth" name="dob" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="language">Language</label>
+                <select name="lan" id="lan">
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message Box</label>
+                <textarea id="message" placeholder="Enter your message" name="message" rows="4" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="Enter Email Address" name="email" required>
+            </div>
+    
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
