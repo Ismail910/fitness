@@ -1,0 +1,13 @@
+.section-title2{
+	text-align: center;
+	font-size: 50px;
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgb(224, 8, 98);
+	-webkit-text-stroke: 1px #f6f7f8;
+	padding: 2rem 0;
+}
+.fitness_about_section{
+    height: 60vh;
+}
