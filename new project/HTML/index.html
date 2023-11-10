@@ -4,90 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness </title>
+    <link rel="stylesheet" href="../filesLocal/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../filesLocal/fontawesome-free-6.4.2-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     <link rel="stylesheet" href="../CSS/index.css">
-
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="nav-wrapper">
-                <div class="logo-container">
-                    <img class="logo" src="../images/logo.jpg" alt="Logo">
-                </div>
-                <nav>
-                    <input class="hidden" type="checkbox" id="menuToggle">
-                    <label class="menu-btn" for="menuToggle">
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                        <div class="menu"></div>
-                    </label>
-                    <div class="nav-container">
-                        <ul class="nav-tabs">
-                            <li class="nav-tab"><a href="./index.html">Home</a></li>
-                            <li class="nav-tab"><a href="./course.html">Course</a></li>
-                            <li class="nav-tab"><a href="./contact.html">Contact</a></li>
-                            <li class="nav-tab"><a href="./about.html">About</a></li>
-                        </ul>
-                    </div>
-                    
-                </nav>
-               
+    <section class="navbarContent">
+        <div class="fitness_navbar">
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo" src="../images/logo.jpg" alt="Logo">
             </div>
-            <div class="slideshow">
-                <div class="slides">
-                   
-                    <div class="slide">
-                        <img src="../images/img3.jpg" alt="Slide 1">
-                        <div class="overlay">
-                            <h1>Slide 1 Title</h1>
-                            <p>Slide 1 Description</p>
-                            <a href="./contact.html" class="button">Contact</a>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </header>
-
-        <div class="courses">
-            <div class="course">
-                <div class="image-overlay">
-                    <h2>Course 1 Title</h2>
-                    <p>Course 1 Description</p>
-                    <a href="./course.html" class="button">Enroll Now</a>
-                </div>
-                <img src="../images/img1.jpg" alt="Course 1">
-            </div>
-        
-            <!-- Course 2 -->
-            <div class="course">
-                <div class="image-overlay">
-                    <h2>Course 2 Title</h2>
-                    <p>Course 2 Description</p>
-                    <a href="./course.html" class="button">Enroll Now</a>
-                </div>
-                <img src="../images/img2.jpg" alt="Course 2">
-            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="./index.html">Home</a></li>
+                        <li class="nav-tab"><a href="./course.html">Course</a></li>
+                        <li class="nav-tab"><a href="./contact.html">Contact</a></li>
+                        <li class="nav-tab"><a href="./about.html">About</a></li>
+                    </ul>
+                </div> 
+            </nav>
         </div>
-        
-        
-
-
-
-
-        
     </div>
-
-
-
-
-    
+    </section>
+	<div class="hero-section">
+		<div class="hero-intro">
+		</div>
+	</div>
+    <section class="fitness_Course">
+        <div class="container-fluid">
+            <div class="courses row">
+                <div class="course col-md-5 col-10">
+                    <div class="image-overlay">
+                        <h2>PERSONAL TRAINING</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                        <a href="./course.html" class="button">Enroll Now</a>
+                    </div>
+                    <img src="../images/team1.png" alt="Course 1">
+                </div>
+            
+                <!-- Course 2 -->
+                <div class="course col-md-5 col-10">
+                    <div class="image-overlay">
+                        <h2>GROUP TRAINING</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                        <a href="./course.html" class="button">Enroll Now</a>
+                    </div>
+                    <img src="../images/team2.png" alt="Course 2">
+                </div>
+            </div>
+            </div>
+    </section>
     <footer class="footer">
         <div class="footer-left col-md-4 col-sm-6">
             <p class="about">
                 <span>About Our Fitness Center</span> Welcome to our fitness center! We are dedicated to providing a healthy and active lifestyle for our community. Our state-of-the-art facilities and experienced trainers are here to help you achieve your fitness goals. Join us on the journey to a healthier you!
-            </p>
-           
+            </p>   
         </div>
         <div class="footer-center col-md-4 col-sm-6">
             <div>
@@ -105,8 +86,7 @@
         </div>
         <div class="footer-right col-md-4 col-sm-6">
             <h2> Fitness<span> Center</span></h2>
-            <p class="menu">
-               
+            <p class="menu"> 
                 <a href="./index.html">Home</a>
                 <a href="./course.html">Course</a>
                 <a href="./contact.html">Contact</a>
@@ -115,6 +95,7 @@
             <p class="name"> Fitness Center &copy; 2023</p>
         </div>
     </footer>
-    
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../filesLocal/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
 </html>
