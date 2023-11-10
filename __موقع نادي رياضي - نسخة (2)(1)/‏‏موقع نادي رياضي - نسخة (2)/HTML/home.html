@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 2 3 ;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.button1 {
+  border: none;
+  color: rgb(204, 240, 3);
+  background-color:rgb(75, 10, 83); 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nav {
+  width: 100%;
+  background-color: rgb(1, 74, 107);
+  overflow:auto ;
+}
+.foot {
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 1px;
+   background-color: rgb(1, 74, 107);
+   color: white;
+   text-align: center;
+}
+.nav a {
+  float: left;
+  padding: 12px;
+  color: plum;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  background-color: #000;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50px;
+  max-height: 50px;
+
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+                </style>
+        <title>
+            Fitness
+        </title>
+    </head>
+<body>
+
+  <ul class="nav">
+    <a href="../HTML/index.html">Main</a>
+
+    <a href="../HTML/home.html">Home</a>
+    <a href="../HTML/contact.html">Contact</a>
+    <a href="../HTML/about.html">About</a>
+</ul>
+<center>
+
+<br> <br> 
+
+      <div class="grid-container">
+            <span class="grid-item"> <img src="../images/1.jpg" alt="Denim Jeans" style="width:50%">
+                <h1>Zomba</h1>
+                <p class="price">$19.99</p>
+              
+                <p>   <button onclick="onclick1()" class="button button1">Buy Course</button>
+                </p> 
+                <p style="color: rgb(23, 112, 6);" id="yes"></p>
+            </div>
+            <span class="grid-item">
+                    <img src="../images/2.jpg" alt="Denim Jeans" style="width:50%">
+                    <h1>Body lifting</h1>
+                    <p class="price">$17</p>
+                    
+                    <p>   <button onclick="onclick2()" class="button button1">Buy Course</button></p>
+               
+                    <p style="color: rgb(23, 112, 6);" id="yes2"></p>
+            </span>
+            <div class="grid-item"> <img src="../images/3.jpg" alt="Denim Jeans" style="width:50%">
+                <h1>Dance</h1>
+                <p class="price">$79</p>
+            
+                <p>   <button onclick="onclick3()" class="button button1">Buy Course</button></p>
+                <p style="color: rgb(23, 112, 6);" id="yes3"></p>
+            </div>  
+            <div class="grid-item"> <img src="../images/4.jpg" alt="Denim Jeans" style="width:50%">
+                <h1>Trampoline</h1>
+                <p class="price">$40</p>
+              
+                <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+                <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+            </div>
+            <div class="grid-item"> <img src="../images/5.jpg" alt="Denim Jeans" style="width:50%">
+              <h1>dancing</h1>
+              <p class="price">$40</p>
+            
+              <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+              <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+          </div>
+          <div class="grid-item"> <img src="../images/6.jpg" alt="Denim Jeans" style="width:50%">
+            <h1>Salsa</h1>
+            <p class="price">$40</p>
+      
+            <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+            <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+        </div>
+        <div class="grid-item"> <img src="../images/7.jpg" alt="Denim Jeans" style="width:50%">
+          <h1>slow</h1>
+          <p class="price">$40</p>
+    
+          <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+          <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+      </div>
+      <div class="grid-item"> <img src="../images/8.jpg" alt="Denim Jeans" style="width:50%">
+        <h1>romance</h1>
+        <p class="price">$40</p>
+        
+        <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+        <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+    </div>
+    <div class="grid-item"> <img src="../images/9.jpg" alt="Denim Jeans" style="width:50%">
+      <h1>cick boxing</h1>
+      <p class="price">$40</p>
+      
+      <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+      <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+  </div>
+
+  <div class="grid-item"> <img src="../images/10.jpg" alt="Denim Jeans" style="width:50%">
+    <h1>Youga</h1>
+    <p class="price">$40</p>
+    
+    <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+    <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+</div>
+<div class="grid-item"> <img src="../images/11.jpg" alt="Denim Jeans" style="width:50%">
+  <h1>Body lefting</h1>
+  <p class="price">$200</p>
+  
+  <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+  <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+</div>
+<div class="grid-item"> <img src="../images/12.jpg" alt="Denim Jeans" style="width:50%">
+  <h1>Body</h1>
+  <p class="price">$140</p>
+ 
+  <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+  <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+</div>
+<div class="grid-item"> <img src="../images/13.jpg" alt="Denim Jeans" style="width:50%">
+  <h1>jump</h1>
+  <p class="price">$770</p>
+ 
+  <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+  <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+</div>
+<div class="grid-item"> <img src="../images/1.jpg" alt="Denim Jeans" style="width:50%">
+  <h1>Taikoando</h1>
+  <p class="price">$440</p>
+
+  <p>   <button onclick="onclick4()" class="button button1">Buy Course</button></p>
+  <p style="color: rgb(23, 112, 6);" id="yes4"></p>
+</div>
+
+          </div>
+    </center>  
+<footer class="foot">
+        <p>
+                Copyright © 2023. Study To Learn. All Rights Reserved.
+              
+              </p>
+</footer>
+
+</body>
+</html>
