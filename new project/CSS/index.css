@@ -215,6 +215,9 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease; /* Add a transition effect for smooth visibility */
 }
+.fitnessHomeimg{
+    height: 450px !important;
+}
 
 .course:hover .image-overlay {
     opacity: 1;
